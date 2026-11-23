@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>InkMaker Lab — links</title>
-<meta name="description" content="InkMaker Lab: free, open mods for e-ink readers and 3D-printed add-ons. Built by one maker with Claude.">
-<link rel="icon" type="image/svg+xml" href="../brand/icon-dark.svg">
-<link rel="stylesheet" href="../brand/brand.css?v=e82a3b9a">
-<script src="../brand/links.js?v=be529c7a"></script>
-<script src="../brand/stats.js?v=5b1cbf52"></script>
+<title>Trying to be a Maker — links</title>
+<meta name="description" content="Trying to be a Maker: 3D prints, add-ons for e-ink readers and free firmware. One maker, still learning, with Claude as co-pilot.">
+<link rel="icon" type="image/svg+xml" href="../brand/favicon.svg">
+<link rel="stylesheet" href="../brand/brand.css?v=a68fa962">
+<script src="../brand/links.js?v=770abdc5"></script>
+<script src="../brand/stats.js?v=b45d4a4b"></script>
 <style>
   * { box-sizing:border-box; }
   body { margin:0; min-height:100vh; background:var(--paper); color:var(--ink); font:17px/1.55 var(--serif);
@@ -29,8 +29,8 @@
   .row .d { display:block; font:400 14.5px/1.35 var(--serif); color:var(--mid); text-transform:none; letter-spacing:0; margin-top:3px; }
   .row .go { font:700 18px var(--mono); flex:none; }
   a.row:hover { transform:translate(-1px,-1px); box-shadow:4px 4px 0 var(--ink); }
-  a.row.red { background:var(--red); color:#fff; }
-  a.row.red .d { color:#fff; opacity:.92; }
+  a.row.red { background:var(--orange); color:var(--ink); }
+  a.row.red .d { color:var(--ink); opacity:.85; }
   div.row { border-style:dashed; background:transparent; color:var(--mid); }
   div.row .go { font-size:11px; letter-spacing:.1em; }
   footer { margin-top:28px; text-align:center; font-size:13.5px; color:var(--mid); }
@@ -40,10 +40,10 @@
 <body>
 <main>
   <div class="top">
-    <img class="icon" src="../brand/icon-dark.svg" alt="InkMaker Lab logo">
-    <h1><b>Ink</b>Maker<span class="lab">Lab</span></h1>
-    <p class="tagline">Make your e-reader yours</p>
-    <p class="bio">Free, open mods for e-ink readers and 3D-printed add-ons. One maker, plus Claude as co-pilot.</p>
+    <img class="icon" src="../brand/icon-dark.svg" alt="Trying to be a Maker logo">
+    <h1>trying to be a <b>maker</b></h1>
+    <p class="tagline">Printing, breaking, trying again</p>
+    <p class="bio">Things I design and 3D print for my desk and my e-reader, plus free firmware for e-ink readers. One maker, still learning, with Claude as co-pilot.</p>
     <span class="wip">Work in progress</span>
   </div>
 
@@ -59,10 +59,10 @@
   (function () {
     var L = window.CI_LINKS || {};
     var rows = [
+      { t: "3D prints",        d: "Desk organizers, stands and cases for e-readers. Free files on MakerWorld.", url: L.makerworld },
       { t: "InkMaker OS",      d: "Free firmware for the Xteink X3. See the editions and install it.", url: "../", always: true },
       { t: "Free wallpapers",  d: "Sleep screens for the Xteink X3, made for its four greys.", url: "../wallpapers.html", always: true },
-      { t: "Make a donation",  d: "Everything is free. A coffee pays for artwork and filament.", url: L.donate, red: true },
-      { t: "3D prints",        d: "Stands, cases and add-ons for e-readers, on MakerWorld.", url: L.makerworld },
+      { t: "Make a donation",  d: "Everything is free. A coffee pays for filament and artwork.", url: L.donate, red: true },
       { t: "Reddit",           d: "Updates, questions and the story behind the builds.", url: L.reddit },
       { t: "Source code",      d: "It is all open. Read it, fork it, improve it.", url: L.github }
     ];

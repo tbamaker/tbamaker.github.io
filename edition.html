@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Edition — InkMaker Lab</title>
+<title>Edition — Trying to be a Maker</title>
 <meta name="description" content="An InkMaker OS edition for Xteink e-readers: what it looks like on a real X3 and how to install it.">
-<link rel="icon" type="image/svg+xml" href="brand/icon-dark.svg">
-<link rel="stylesheet" href="brand/brand.css?v=e82a3b9a">
-<link rel="stylesheet" href="brand/site.css?v=e07f1845">
+<link rel="icon" type="image/svg+xml" href="brand/favicon.svg">
+<link rel="stylesheet" href="brand/brand.css?v=a68fa962">
+<link rel="stylesheet" href="brand/site.css?v=b88172ac">
 </head>
 <body data-home="index.html">
 <div class="wrap">
   <nav class="top">
-    <a class="wm" href="./"><img src="brand/mark.svg" alt=""><span><b>Ink</b>Maker<span class="lab">Lab</span></span></a>
+    <a class="wm" href="./"><img src="brand/mark.svg" alt=""><span class="wmt">trying to be a <b>maker</b></span></a>
     <span class="links">
       <a class="hide-s" href="index.html#editions">Editions</a>
       <a class="hide-s" href="wallpapers.html">Wallpapers</a>
@@ -91,12 +91,12 @@
 
 <a class="btn red small float" data-support href="index.html#support">Buy me a coffee</a>
 
-<script src="brand/links.js?v=be529c7a"></script>
-<script src="brand/stats.js?v=5b1cbf52"></script>
-<script src="brand/editions.js?v=e28bb3c6"></script>
+<script src="brand/links.js?v=770abdc5"></script>
+<script src="brand/stats.js?v=b45d4a4b"></script>
+<script src="brand/editions.js?v=75b545e7"></script>
 <script src="brand/firmware.js?v=f33af162"></script>
-<script src="brand/edition-pages.js?v=787236bb"></script>
-<script src="brand/site.js?v=7d512b0b"></script>
+<script src="brand/edition-pages.js?v=7bcdb7b3"></script>
+<script src="brand/site.js?v=cec7f2b7"></script>
 <script>
 (function () {
   var E = window.IM_EDITIONS, P = window.IM_EDITION_PAGES, ART = window.IM_ART;
@@ -107,7 +107,7 @@
   function marked(t) { return esc(t).replace(/\*(.+?)\*/g, "<em>$1</em>"); }
   function art(src, alt) { return src.indexOf("svg:") === 0 ? ART[src.slice(4)] : '<img src="' + src + '" alt="' + esc(alt || "") + '">'; }
 
-  document.title = e.name + " edition — InkMaker Lab";
+  document.title = e.name + " edition — Trying to be a Maker";
   document.getElementById("ed-kicker").textContent = "InkMaker OS · " + e.name + " edition";
   document.getElementById("ed-title").innerHTML = marked(p.tagline || e.name);
   document.getElementById("ed-intro").textContent = p.intro || e.line;

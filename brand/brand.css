@@ -1,40 +1,44 @@
-/* InkMaker Lab — brand tokens and shared pieces (site, link page, post templates).
-   Source of truth: 03_SITO/brand/brand.css */
+/* Trying to be a Maker — brand tokens and shared pieces (site, link page, post templates).
+   Source of truth: 03_SITO/brand/brand.css. Palette V1 "bosco e arancio" (23 nov 2026). */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap");
 
 :root {
-  --paper: #F3F0E8;   /* page background: unbleached paper */
-  --card:  #FBFAF6;   /* raised surfaces */
-  --ink:   #141414;   /* text, frames, title bands */
-  --mid:   #5A5852;   /* secondary text */
-  --soft:  #D9D5C9;
-  --line:  #141414;   /* frames */   /* hairlines */
-  --red:   #E8472B;   /* the second ink: one accent per view (support button, one pixel) */
-  --red-text: #C2361C;/* red for small text on paper (contrast) */
+  --paper: #F4F2EA;   /* page background */
+  --card:  #FBFAF5;   /* raised surfaces */
+  --ink:   #1C2420;   /* text, frames (green-black) */
+  --mid:   #59625C;   /* secondary text */
+  --soft:  #D5DACF;   /* hairlines */
+  --line:  #1C2420;   /* frames */
+  --green: #2F6B4F;   /* main colour: title bands, inverted words, big surfaces */
+  --sage:  #A9C4A0;   /* light green: on dark backgrounds, highlights */
+  --orange: #F07A3A;  /* the accent: one per view (support button, the cursor) */
+  --orange-text: #B4511D; /* orange for small text on paper (contrast) */
+  /* old names, kept so older pages still work: "red" is now the orange accent */
+  --red: var(--orange);
+  --red-text: var(--orange-text);
   --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --serif: "Source Serif 4", Georgia, "Iowan Old Style", serif;
 }
 
-/* Wordmark: Ink (extra bold) + Maker (regular) + Lab (small inverted box), with the drop mark */
-.wm { display:inline-flex; align-items:center; gap:.38em; font-family:var(--mono); font-weight:400;
-      letter-spacing:-.02em; color:var(--ink); text-decoration:none; white-space:nowrap; }
-.wm img { height:1.5em; width:auto; display:block; }
+/* Wordmark: the "tbamaker._" mark (image) + "trying to be a maker" */
+.wm { display:inline-flex; align-items:center; gap:.5em; font-family:var(--mono); font-weight:400;
+      letter-spacing:-.01em; color:var(--ink); text-decoration:none; white-space:nowrap; }
+.wm img { height:1.25em; width:auto; display:block; }
 .wm b { font-weight:800; }
+.wm .wmt { font-size:.82em; }
 .wm.inv { color:var(--paper); }
-/* "Lab": small inverted box after the name (same idea as the inverted word in headlines) */
-.lab { display:inline-block; font-family:var(--mono); font-weight:700; font-size:.6em; letter-spacing:.08em;
-       text-transform:uppercase; line-height:1; padding:.16em .34em .14em; margin-left:.4em; vertical-align:.2em;
-       background:var(--ink); color:var(--paper); }
-.wm.inv .lab { background:var(--paper); color:var(--ink); }
+/* old "Lab" box, no longer used in the wordmark */
+.lab { display:none; }
 
-/* "System window": black title band over a framed card */
+/* "System window": green title band over a framed card */
 .win { border:2px solid var(--ink); background:var(--card); }
-.win > header { background:var(--ink); color:var(--paper); font-family:var(--mono); font-size:13px; font-weight:700;
+.win > header { background:var(--green); color:var(--paper); font-family:var(--mono); font-size:13px; font-weight:700;
                 letter-spacing:.12em; padding:6px 12px; text-transform:uppercase; display:flex; justify-content:space-between; gap:10px; }
 
 .btn { display:inline-block; font-family:var(--mono); font-size:15px; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
        text-decoration:none; padding:13px 20px; border:2px solid var(--ink); background:var(--ink); color:var(--paper); cursor:pointer; }
 .btn.ghost { background:transparent; color:var(--ink); }
-.btn.red { background:var(--red); border-color:var(--ink); color:#fff; }
+.btn.red, .btn.accent { background:var(--orange); border-color:var(--ink); color:var(--ink); }
 .btn:hover { transform:translate(-1px,-1px); box-shadow:3px 3px 0 var(--ink); }
-.px { display:inline-block; width:.55em; height:.55em; background:var(--red); vertical-align:baseline; }
+/* the cursor: a short orange bar, the brand's "still trying" sign (was the red pixel) */
+.px { display:inline-block; width:.9em; height:.2em; background:var(--orange); vertical-align:baseline; }

@@ -1,4 +1,4 @@
-// InkMaker Lab — i contenuti delle pagine delle singole edizioni (edition.html?e=<id>).
+// Trying to be a Maker — i contenuti delle pagine delle singole edizioni (edition.html?e=<id>).
 // Nome, stato e disegno vengono da editions.js; qui ci sono solo testo, punti e schermate.
 // Schermate: img/edizioni/<id>/{home,page2,apps,stats,sleep}.png, fotografate da un X3 vero
 // (02_EDIZIONI/edizioni/<id>/anteprime/prova_en_*.png). Le copertine dei libri sono coperte.

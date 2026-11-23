@@ -1,4 +1,4 @@
-// InkMaker Lab — le edizioni mostrate sul sito (pagina principale e pagina di installazione).
+// Trying to be a Maker — le edizioni mostrate sul sito (pagina principale e pagina di installazione).
 // status: "soon" = in arrivo (pulsanti spenti), "ready" = installabile.
 // Per pubblicare un'edizione: status "ready", i file in firmware/<id>-<lingua>/ e i due manifest-<id>-<lingua>.json.
 window.IM_DEVICES = [

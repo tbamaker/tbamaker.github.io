@@ -1,4 +1,4 @@
-// InkMaker Lab — parti comuni alle pagine del sito: collegamenti, pulsante "sostienimi", elenco delle edizioni.
+// Trying to be a Maker — parti comuni alle pagine del sito: collegamenti, pulsante "sostienimi", elenco delle edizioni.
 (function () {
   var L = window.CI_LINKS || {};
   // Collegamenti esterni: se l'indirizzo manca il pulsante resta nascosto.

@@ -1,4 +1,4 @@
-// InkMaker Lab — statistiche anonime con GoatCounter (niente cookie, niente dati personali).
+// Trying to be a Maker — statistiche anonime con GoatCounter (niente cookie, niente dati personali).
 // Si accende scrivendo il codice dell'account in brand/links.js (goatcounter: "inkmakerlab"): finche' e' vuoto non parte nulla.
 // Conta: le visite di ogni pagina; gli eventi "download/..." (wallpaper), "install/..." (firmware), "link/..." (pagina dei link).
 // I numeri si scaricano sul Mac con 07_STATISTICHE/aggiorna.py.
