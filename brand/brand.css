@@ -23,7 +23,7 @@
 /* Wordmark: the "tbamaker._" mark (image) + "trying to be a maker" */
 .wm { display:inline-flex; align-items:center; gap:.5em; font-family:var(--mono); font-weight:400;
       letter-spacing:-.01em; color:var(--ink); text-decoration:none; white-space:nowrap; }
-.wm img { height:1.25em; width:auto; display:block; }
+.wm img { height:1.5em; width:auto; display:block; }
 .wm b { font-weight:800; }
 .wm .wmt { font-size:.82em; }
 .wm.inv { color:var(--paper); }
